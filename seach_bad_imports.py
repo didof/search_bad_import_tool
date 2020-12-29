@@ -6,6 +6,9 @@
 from os import listdir
 from os.path import isfile, join, isdir
 
+alertcolor = '\u001b[31m'
+endcolor = '\u001b[0m'
+
 def getonlyfiles(path, extensions = ['js', 'jsx', 'scss'], include_dotfiles = False, excludedfolders = ['node_modules', 'dist', '__tests__', '__tests_utils__', '__mocks__']):
     print('searching only: ', ' '.join(extensions))
     print('include dotfiles: ', include_dotfiles)
@@ -68,7 +71,7 @@ def check(file_path, trigger, prefix = ''):
     
     strbadimports = ' '.join(badimports)
     if len(badimports) >= 1:
-        print(f'bad import in {file_path} at row {strbadimports}')
+        print(f'{alertcolor}bad import in {file_path} at row {strbadimports}{endcolor}')
 
 def search_bad_imports(dirpath, triggerstring):
     print('searching in: ', dirpath)
