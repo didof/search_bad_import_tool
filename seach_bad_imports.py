@@ -12,7 +12,7 @@ endcolor = '\u001b[0m'
 def getonlyfiles(path, extensions = ['js', 'jsx', 'scss'], include_dotfiles = False, excludedfolders = ['node_modules', 'dist', '__tests__', '__tests_utils__', '__mocks__']):
     print('searching only: ', ' '.join(extensions))
     print('include dotfiles: ', include_dotfiles)
-    print('excluding folders: ', ' '.join(excludedfolders))
+    print('excluding folders: \n*', '\n* '.join(excludedfolders))
     
     filesPaths = []
 
