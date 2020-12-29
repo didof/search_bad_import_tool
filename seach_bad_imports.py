@@ -28,7 +28,7 @@ def getonlyfiles(path, extensions = ['js', 'jsx', 'scss'], include_dotfiles = Fa
         return output
 
 
-    def operateonfolder(folderpath, precedent = ''):
+    def operateonfolder(folderpath):
         for file in listdir(folderpath):
 
             if not include_dotfiles and file.startswith('.'):
