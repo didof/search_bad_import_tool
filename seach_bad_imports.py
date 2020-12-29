@@ -75,6 +75,6 @@ def search_bad_imports(dirpath, triggerstring):
     filespaths = getonlyfiles(dirpath)
     shunt(filespaths, triggerstring)
 
-target = '/home/oem/chili/chili-website'
+target = '/home/fdidonato/chili/chili-website'
 
 search_bad_imports(target, 'repo/itsart')
