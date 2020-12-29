@@ -76,5 +76,6 @@ def search_bad_imports(dirpath, triggerstring):
     shunt(filespaths, triggerstring)
 
 target = '/home/fdidonato/chili/chili-website'
+trigger = 'repo/itsart'
 
-search_bad_imports(target, 'repo/itsart')
+search_bad_imports(target, trigger)
